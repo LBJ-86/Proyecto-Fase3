@@ -1,7 +1,7 @@
 {
   "type": "module",
   "name": "apirestful",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Servidor ApiRestful ECommerce",
   "main": "server.js",
   "scripts": {
@@ -13,7 +13,7 @@
     "node": ">=16"
   },
   "keywords": [],
-  "author": "DS",
+  "author": "JLB",
   "license": "MIT",
   "dependencies": {
     "basic-ftp": "^5.0.5",
