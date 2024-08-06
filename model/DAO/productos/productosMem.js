@@ -3,43 +3,56 @@ class ModelMem {
     constructor() {
         this.productos = [
             {
-                nombre: "Pants",
-                precio: "227.00",
-                stock: 0,
-                marca: "Grocery",
-                categoria: "Bespoke Granite Computer",
-                detalles: "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support",
-                foto: "https://loremflickr.com/640/480/sports",
-                envio: false,
+                nombre: "Silla Gaming",
+                codigo: "sg1",
+                precio: 90000,
+                stock: 7,
+                marca: "Play Haha",
+                categoria: "Sillas-Gaming",
+                descripcionCorta: "Silla Gaming Ergonómica y giratoria",
+                descripcionLarga: "Silla Gaming Ergonómica de Cuero. Ideal para Oficina, tareas de escritorio y gamers exigentes.",
+                edadDesde: 12,
+                edadHasta: 99,
+                foto: "https://m.media-amazon.com/images/I/61wnzULkSFL._AC_SL1500_.jpg",
+                envio: true,
                 id: "1"
             },
             {
-                nombre: "Chair",
-                precio: "766.00",
-                stock: 78,
-                marca: "Automotive",
-                categoria: "Rustic Cotton Bike",
-                detalles: "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients",
-                foto: "https://loremflickr.com/640/480/sports",
-                envio: false,
+                nombre: "Silla Gaming",
+                codigo: "sg2",
+                precio: 90000,
+                stock: 12,
+                marca: "HLFURNIEU",
+                categoria: "Sillas-Gaming",
+                descripcionCorta: "Silla Gaming Ergonómica y giratoria",
+                descripcionLarga: "Silla Gaming Ergonómica de Cuero. Ideal para Oficina, tareas de escritorio y gamers exigentes.",
+                edadDesde: 12,
+                edadHasta: 99,
+                foto: "https://m.media-amazon.com/images/I/61fHKDwGQ7L._AC_SL1500_.jpg",
+                envio: true,
                 id: "2"
             },
             {
-                nombre: "Shoes",
-                precio: "981.00",
-                stock: 39,
-                marca: "Outdoors",
-                categoria: "Handmade Steel Sausages",
-                detalles: "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart",
-                foto: "https://loremflickr.com/640/480/food",
-                envio: false,
+                nombre: "Silla Gaming",
+                codigo: "sg2",
+                precio: 10500,
+                stock: 4,
+                marca: "LXRADEO",
+                categoria: "Sillas-Gaming",
+                descripcionCorta: "Silla Gaming Ergonómica y giratoria",
+                descripcionLarga: "Silla gaming Ergonómica con Soporte Lumbar Ajustable Interno. Con diseño ergonómico inclinable. Ideal para Oficina, tareas de escritorio y gamers exigentes.",
+                edadDesde: 12,
+                edadHasta: 99,
+                foto: "https://m.media-amazon.com/images/I/71OTpvHzgtL._AC_SL1500_.jpg",
+                envio: true,
                 id: "3"
             }
+
         ]
     }
 
     obtenerProductos = async () => this.productos
-    
+
     obtenerProducto = async id => {
         const producto = this.productos.find(producto => producto.id === id)
         return producto || {}
