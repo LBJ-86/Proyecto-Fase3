@@ -10,6 +10,7 @@ const BASE = process.env.BASE || 'test'
 const FTP_HOST = process.env.FTP_HOST || ''
 const FTP_USER = process.env.FTP_USER || ''
 const FTP_PASS = process.env.FTP_PASS || ''
+const FTP_DST = process.env.FTP_DST || ''
 const MP_AccessToken = process.env.MP_AccessToken || ''
 
 export default {
@@ -20,5 +21,6 @@ export default {
     FTP_HOST,
     FTP_USER,
     FTP_PASS,
+    FTP_DST,
     MP_AccessToken
 }
