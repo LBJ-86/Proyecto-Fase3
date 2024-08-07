@@ -1,8 +1,5 @@
 import express from 'express'
-
 import Controlador from '../controlador/upload.js'
-
-//https://www.npmjs.com/package/multer
 import multer from 'multer'
 
 const storage = multer.diskStorage({

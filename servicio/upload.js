@@ -9,7 +9,6 @@ class Servicio {
     }
 
     subirArchivoFTP = async file => {
-        //console.log(file)
         
         const client = new Client()
         client.ftp.verbose = false
@@ -44,8 +43,6 @@ class Servicio {
             await fs.promises.unlink(src)
 
             client.close()
-            //return `http://localhost:${config.PORT}/uploads/${file.filename}`
-            //return `https://${config.FTP_USER}.000webhostapp.com/uploads/${file.filename}`
             return `https://danielsanchez.com.ar/uploads/${config.FTP_DST}/${file.filename}`
         }
         catch (err) {

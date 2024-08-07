@@ -1,6 +1,3 @@
-//https://www.npmjs.com/package/mongoose
-//https://mongoosejs.com/
-
 import mongoose from 'mongoose'
 import config from '../config.js'
 
