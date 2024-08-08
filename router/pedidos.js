@@ -2,7 +2,7 @@ import express from 'express'
 import Controlador from '../controlador/pedidos.js'
 
 class Router {
-    constructor(guarda) {
+    constructor() {
         this.router = express.Router()
         this.controlador = new Controlador()
     }
@@ -11,7 +11,7 @@ class Router {
         this.router.get('/', this.controlador.obtenerPedidos )
         this.router.post('/', this.controlador.guardarPedido )
         this.router.post('/mp/create_preference', this.controlador.createPreference )
-        this.router.get('/mp/feedback', this.controlador.feedback)
+        /* this.router.get('/mp/feedback', this.controlador.feedback) */
 
         return this.router
     }
